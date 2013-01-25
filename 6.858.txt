@@ -1,0 +1,156 @@
+//6.858
+http://css.csail.mit.edu/6.858/2012/schedule.html
+http://css.csail.mit.edu/6.858/2012/quiz.html
+
+LEC 1: Introduction, threat models
+Assigned: Lab 1: Buffer overflows
+介绍缓冲区溢出几种。基本知识，预备知识。
+
+LEC 2: Control hijacking attacks
+Preparation: Read Baggy bounds checking + errata (Question)//paper
+接着LEC1，介绍如何劫持控制流。预备知识。
+
+LEC 3: Privilege separation
+Preparation: Read OKWS (Question)
+权限分离，说明如何初步建立一个安全的web服务器。
+
+LEC 4: Evolving OS isolation mechanisms
+Preparation: Read Capsicum (Question)
+DAC  MAC	
+http://css.csail.mit.edu/6.858/2012/readings/capsicum.pdf
+常见的几种访问控制模型介绍，和如果我们自己编写的话，要使用哪种。
+
+
+LEC 5: Guest lecture:
+Paul Youn from iSEC Partners//Where do security bugs come from? GOOD! http://css.csail.mit.edu/6.858/2012/lec/isec-guest-lecture.pdf
+Assigned: Lab 2: Privilege separation//http://css.csail.mit.edu/6.858/2012/labs/lab2.html
+客座教授：（详细，赞！）
+信息安全漏洞的来源和哪些人会找漏洞，等，详细的入门级介绍，未来职位方向推荐等。
+
+LEC 6: Network protocols
+Preparation: Read Kerberos (Question)
+已Kerberos为模型，介绍安全架构
+
+LEC 7: Web application security
+Preparation: Read Browser Security Handbook, Part 2 and skim OWASP Top 10 (Question)
+介绍现代web安全架构，包含同源策略等
+
+LEC 8: Finding bugs in server-side code
+Preparation: Read Static Detection of Scripting Vulnerabilities (notation) (Question)
+静态分析，发现服务器段程序代码的漏洞（PHP等）
+
+LEC 9: Javascript sandboxing
+Preparation: Read Run-Time Enforcement for Javascript (Question)
+Assigned: Lab 3: Server-side sandboxing
+
+The paper is one route, taken by Facebook's FBJS and Yahoo's AdSafe.
+Google's Caja project is similar in some ways, although it tends to give
+acecss to virtualized objects instead of giving access to real objects.
+
+怎样构建一个安全的javascript的sandbox，介绍常见的javascript策略
+实验：熟悉PyPy sandbox
+
+LEC 10: SSL and HTTPS
+Preparation: Read ForceHTTPS (Question)
+http和引入https的好处和缺点和区别和方法
+
+LEC 11: Sandboxing native code
+Preparation: Read Native Client (Question)
+介绍了native client的架构和实现（一个很好的安全的沙盘解决方案，从而可以允许运行native程序，赞！）
+
+LEC 12: User authentication
+Preparation: Read The Quest to Replace Passwords (Question)
+介绍用户认证的常见方式和比较评价//http://css.csail.mit.edu/6.858/2012/readings/passwords.pdf
+
+
+LEC 13: Single signon
+Preparation: Read Empirical Analysis of OAuth (Question)
+Assigned: Lab 5: Browser security// Cookie Theft  Cross-Site Request Forgery  Side Channels and Phishing   Profile Worm  
+Assigned: Lab 7: Final project//3-4人的实验，赞往年方案！ http://css.csail.mit.edu/6.858/2012/labs/lab7.html
+
+介绍单点登录(OAuth)。他与其他方案的区别
+扩展阅读//http://css.csail.mit.edu/6.858/2012/readings/oauth-sso.pdf The Devil is in the (Implementation) Details:An Empirical Analysis of OAuth SSO Systems
+
+LEC 14: Mobile phone security
+Preparation: Read Understanding Android Security + errata (Question)
+
+Overall plan:
+  First understand how Android applications look like and work.
+  Then discuss security mechanisms and policies.
+介绍安卓的安全和架构 扩展阅读//http://css.csail.mit.edu/6.858/2012/readings/android.pdf
+
+LEC 15: Platform-enforced privacy
+Preparation: Read Koi + errata (Question)
+
+What problem is this paper trying to address?
+  User location information is potentially sensitive.
+  Applications may need to access to user's location information.
+  An application could inappropriately disclose user's location.
+  How to build applications where this is less likely to happen?
+
+介绍权限泄漏问题和解决方案。
+
+LEC 16: Anonymous communication
+Preparation: Read Tor (Question)
+Assigned: Lab 6: Javascript sandboxing
+
+What's the goal of the paper (or Tor)?
+  Anonymity for clients, which want to connect to servers on the internet.
+  Anonymity for servers, which want to service requests from users.
+  What is anonymity?
+    Adversary cannot tell which users are communicating with which servers.
+    Adversary (most likely) knows that users, servers are communicating via Tor.
+    That is, Tor not designed to prevent adversary from finding Tor users.
+介绍匿名网络
+赞LAB6
+
+LEC 17: Side-channel attacks
+Preparation: Read Remote timing attacks (Question)
+介绍Side-channel attacks on RSA
+
+LEC 18: File system encryption
+Preparation: Read BitLocker (Question)
+
+What's the problem this paper is trying to solve?
+  Prevent data from being stolen if an attacker physically steals a laptop.
+  Effectively, want some form of disk encryption.
+介绍文件系统加密
+扩展阅读//http://css.csail.mit.edu/6.858/2012/readings/bitlocker.pdf AES-CBC + Elephant diffuser A Disk Encryption Algorithm for Windows Vista
+
+LEC 19: Trusted hardware
+Preparation: Read TrInc + errata (Question)
+
+What's the problem this paper is trying to solve?
+  Scenario: suppose we don't trust most parts of some computer system.
+    Controlled by potentially malicious user.
+    Typically distributed system communicating over the Internet.
+    Client machines could be ~arbitrary.
+  Still want to have that system participate in a network protocol.
+    Many examples: BitTorrent clients, DNS servers, shared git repository,
+                   online game participants, ...
+  How can we trust what some system (either client or server) is telling us?
+介绍什么是Trusted hardware，同时介绍一种解决方案
+扩展阅读//http://css.csail.mit.edu/6.858/2012/readings/trinc.pdf TrInc: Small Trusted Hardware for Large Distributed Systems
+
+LEC 20: Intrusion detection and analysis
+Preparation: Read Backtracker (Question)
+入侵检测和分析
+扩展阅读//http://css.csail.mit.edu/6.858/2012/readings/backtracking.pdf Backtracking Intrusions
+
+LEC 21: Security economics
+Preparation: Read Click Trajectories (Question)
+从经济学的角度讨论信息安全（赞！）
+扩展阅读//http://css.csail.mit.edu/6.858/2012/readings/trajectories.pdf Click Trajectories: End-to-End Analysis of the Spam Value Chain
+
+LEC 22: Project presentations
+DUE: Final project presentation
+Last day of classes
+
+
+
+
+
+
+
+
+
