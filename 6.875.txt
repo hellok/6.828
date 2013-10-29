@@ -1,0 +1,83 @@
+Cryptography and Cryptanalysis
+赞！
+
+Fall 2001 homepage Here you can find all manner of information relating to 6.875/18.425.
+Contact Information
+Handouts available online (all handouts - problem sets & solutions)
+Scribe notes
+Announcements
+Problem Set TeX templates
+Basic TeX tutorial
+Course Bibliography
+Students seeking collaborators
+Contact Information
+
+Instructor:   Anna Lysyanskaya,  anna@theory.lcs.mit.edu
+Office:       NE43 - 372
+
+TA:           Moses Liskov,  mliskov@theory.lcs.mit.edu
+Office:       NE43 - 334
+Anna's office hours are by appointment.
+Moses' regular office hours are 3PM-5PM on Mondays, in room 34-302 (and also by appointment)
+Handouts
+
+All handouts are in postscript format.
+1a: Course Information
+1b: Problem Set 1
+1c: Sign-up Sheet
+2: Problem Set 2
+3: Solution Set 1
+4: Problem Set 3
+5: Problem Set 4
+6: Solution Set 2
+7: Solution for PS2, problem 2 (addendum)
+8: Solution Set 3
+9: Problem Set 5
+10: Solution Set 4
+11: Problem Set 6
+12: Problem Set 7
+13: Solution Set 5
+14: Problem Set 8
+15: Solution Set 6
+16: Problem Set 9
+17: Solution Set 7
+18: Solution Set 8
+19: Solution Set 9
+Problem Sets and Solutions
+
+Problem Set 1 - template - solutions
+Problem Set 2 - template - solutions - addendum
+Problem Set 3 - template - solutions
+Problem Set 4 - template - solutions
+Problem Set 5 - template - solutions
+Problem Set 6 - template - solutions
+Problem Set 7 - template - solutions
+Problem Set 8 - template - solutions
+Problem Set 9 - template - solution
+Scribe Notes
+
+Lecture 1. Scribe: Moses Liskov
+Lecture 2. Scribe: Susan Hohenberger
+Lecture 3. Scribe: Jennifer Mulligan
+Lecture 4. Scribe: Emil Sit
+Lecture 5. Scribe: Stephen Weis
+Lecture 6. Scribe: Emina Torlak
+Lecture 7. Scribe: Nick Feamster
+Lecture 8. Scribe: Eamon Walsh
+Lecture 9. Scribe: Deniss Cebikins
+Lecture 10. Scribe: Paisa Seeluangsawat
+Lecture 11. Scribe: Alice Chan
+Lecture 12. Scribe: Jelena Spasojevic
+Lecture 13. Scribe: Marshall Tappen
+Lecture 14. Scribe: Abhinav Kumar
+Lecture 15. Scribe: Josh Marron
+Lecture 16. Scribe: Kolya Zeldovich
+Lecture 17.
+Lecture 18. Scribe: Yogishwar Maharaj
+Lecture 19. Scribe: Jon Hunt
+Lecture 20. Scribe: Alex Firshein
+Lecture 21. Scribe: Jen Mulligan
+Lecture 22. Scribe: Ryan Wagner
+Lecture 23. Scribe: Adrian Birka
+Lecture 24. Scribe: Eamon Walsh
+Lecture 25. Scribe: Jake Abernethy

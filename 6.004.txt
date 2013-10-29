@@ -1,0 +1,5 @@
+computation structures
+
+http://6004.csail.mit.edu/currentsemester/
+
+https://github.com/nelhage/bemu/
