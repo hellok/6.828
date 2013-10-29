@@ -37,7 +37,7 @@ Preparation: Read Browser Security Handbook, Part 2 and skim OWASP Top 10 (Quest
 
 LEC 8: Finding bugs in server-side code
 Preparation: Read Static Detection of Scripting Vulnerabilities (notation) (Question)
-静态分析，发现服务器段程序代码的漏洞（PHP等）
+静态分析，发现服务器段程序代码的漏洞（PHP等）	
 
 LEC 9: Javascript sandboxing
 Preparation: Read Run-Time Enforcement for Javascript (Question)
