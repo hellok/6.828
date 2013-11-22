@@ -1,0 +1,173 @@
+//6.858 2013
+变化：
+部分课程顺序前移
+
+新增:
+Integer overflows and static analysis
+Network security
+Web security model
+Database encryption
+Obfuscation and reverse-engineering
+
+去处合并到了其他部分：
+Single signon
+入侵检测和分析
+Trusted hardware
+Platform-enforced privacy
+
+整体更丰富了!威武!
+
+
+http://css.csail.mit.edu/6.858/2013/schedule.html
+http://css.csail.mit.edu/6.858/2013/quiz.html
+
+LEC 1: Introduction, threat models
+Assigned: Lab 1: Buffer overflows
+介绍缓冲区溢出几种。基本知识，预备知识。
+
+LEC 2: Control hijacking attacks
+Preparation: Read Baggy bounds checking + errata (Question)//paper
+接着LEC1，介绍如何劫持控制流。预备知识。
+
+LEC 3: Integer overflows and static analysis（今年新添加课程） 
+unsigned int-->http://css.csail.mit.edu/6.858/2013/lec/l03-kint.txt
+赞,结合wang的最新一篇论文kint说明整型溢出问题
+
+LEC 4: Privilege separation
+Preparation: Read OKWS (Question)
+权限分离，说明如何初步建立一个安全的web服务器。
+
+LEC 5: Guest lecture:
+Paul Youn from iSEC Partners//Where do security bugs come from? GOOD! http://css.csail.mit.edu/6.858/2012/lec/isec-guest-lecture.pdf
+Assigned: Lab 2: Privilege separation//http://css.csail.mit.edu/6.858/2012/labs/lab2.html
+客座教授：（详细，赞！）
+信息安全漏洞的来源和哪些人会找漏洞，等，详细的入门级介绍，未来职位方向推荐等。
+
+LEC 6: Evolving OS isolation mechanisms
+Preparation: Read Capsicum (Question)
+DAC  MAC	
+http://css.csail.mit.edu/6.858/2012/readings/capsicum.pdf
+常见的几种访问控制模型介绍，和如果我们自己编写的话，要使用哪种。
+
+新添加:
+http://css.csail.mit.edu/6.858/2013/readings/watson-extensibility.pdf
+//TODO
+
+LEC 7: Sandboxing native code
+Preparation: Read Native Client (Question)
+介绍了native client的架构和实现（一个很好的安全的沙盘解决方案，从而可以允许运行native程序，赞！）
+
+LEC 8: Network security(今年新添加课程)
+Preparation: Read Security Problems in TCP/IP (2004) (Question)
+
+
+LEC 9: Network protocols
+Preparation: Read Kerberos (Question)
+已Kerberos为模型，介绍安全架构(1988)
+
+LEC 10: Web security model(今年新添加课程)
+Preparation: Read The Tangled Web (2012), Chapters 9-13 (Question)
+推荐阅读:The Tangled Web(2012)
+
+LEC 11: Securing web applications（修改名称）
+Preparation: Read Security in Django (2012) and Django CSRF (Question)
+Assigned: Lab 3: Server-side sandboxing
+怎样构建安全的服务器端程序
+
+
+LEC 12: SSL and HTTPS
+Preparation: Read ForceHTTPS (Question)
+http和引入https的好处和缺点和区别和方法
+
+
+LEC 13: Side-channel attacks
+Preparation: Read Remote timing attacks (Question)
+介绍Side-channel attacks on RSA
+
+
+LEC 14: Privacy and data lifetime
+Preparation: Read Private browsing (2010) (Question)
+Assigned: Lab 5: Browser security
+Quiz 1 Review: 7:30pm - 9:30pm in 34-101.
+
+oct 28
+Quiz 1: Covers lectures 1-12 and labs 1-3
+Reference: Past quizzes, solutions
+Materials: Open laptop, no Internet
+Location: 50-340 (Walker)
+
+LEC 15: User authentication
+Preparation: Read The Quest to Replace Passwords (Question)
+介绍用户认证的常见方式和比较评价
+//http://css.csail.mit.edu/6.858/2013/readings/passwords-extended.pdf
+//http://css.csail.mit.edu/6.858/2013/readings/passwords.pdf
+
+LEC 16: Anonymous communication
+Preparation: Read Tor (2004) and blog posts 1, 2, and 3 (2012) (Question)
+Assigned: Lab 6: Javascript sandboxing
+What's the goal of the paper (or Tor)?
+  Anonymity for clients, which want to connect to servers on the internet.
+  Anonymity for servers, which want to service requests from users.
+  What is anonymity?
+    Adversary cannot tell which users are communicating with which servers.
+    Adversary (most likely) knows that users, servers are communicating via Tor.
+    That is, Tor not designed to prevent adversary from finding Tor users.
+介绍匿名网络
+赞LAB6
+
+LEC 17: Mobile phone security (Slides)
+Preparation: Read Understanding Android Security (2009) + errata (Question)
+
+Overall plan:
+  First understand how Android applications look like and work.
+  Then discuss security mechanisms and policies.
+介绍安卓的安全和架构 扩展阅读
+//http://css.csail.mit.edu/6.858/2013/readings/android.pdf
+
+LEC 18: File system encryption
+Preparation: Read BitLocker (2006) (Question)
+
+What's the problem this paper is trying to solve?
+  Prevent data from being stolen if an attacker physically steals a laptop.
+  Effectively, want some form of disk encryption.
+介绍文件系统加密
+扩展阅读//http://css.csail.mit.edu/6.858/2013/readings/bitlocker.pdf AES-CBC + Elephant diffuser A Disk Encryption Algorithm for Windows Vista
+
+LEC 19: Database encryption(今年新添加课程)
+Preparation: Read CryptDB (2011) (Question)
+阅读
+http://css.csail.mit.edu/6.858/2013/readings/cryptdb.pdf
+来自mit自己的一个实验项目 赞
+
+LEC 20: Guest lecture:
+Mark Silis from MIT IS&T
+Quiz 2 Review: 7:30pm - 9:30pm in 32-141.
+
+
+LEC 21: Obfuscation and reverse-engineering(今年新添加课程)
+混淆和逆向工程
+Preparation: Read Looking inside Dropbox (2013) (Question)
+扩展阅读,介绍dropbox等:
+http://css.csail.mit.edu/6.858/2013/readings/dropbox.pdf
+赞
+
+Quiz 2: Focuses on lectures 13-21 and labs 4-6 (but may build on earlier material)
+Reference: Past quizzes, solutions
+Materials: Open laptop, no Internet
+Location: 50-340 (Walker)
+
+LEC 22: Security economics
+从经济学的角度讨论信息安全（赞！）
+Preparation: Read Click Trajectories (2011) (Question)
+http://css.csail.mit.edu/6.858/2013/readings/trajectories.pdf
+
+LEC 23: Project presentations
+DUE: Final project presentation
+Last day of classes
+
+
+
+
+
+
+
