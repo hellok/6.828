@@ -1,0 +1,36 @@
+Foundations of Prog Analysis
+程序分析基础
+cool～
+
+Adam Chlipala & Armando Solar-Lezama
+http://stellar.mit.edu/S/course/6/fa13/6.820/
+
+
+课程介绍：
+关于程序编程的你应该知道TOP N问题
+
+6个lab
+
+Pset 1 (out now, due in about 2 weeks!)
+- Practice functional programming
+- Build some Lambda Calculus interpreters
+o Pset 2
+- Practice more functional programming
+- Practice writing proofs in Coq
+-
+Implement a type inference engine
+o Pset 3
+- How to make formal arguments about the properties of a type 
+system
+- Coq proof of type safety for a concurrent language
+o Pset 4
+- Learn about SMT solvers
+-
+Implement your own verifier for simple C programs
+Pset 5
+-
+Implement an analysis to check for memory errors in C
+o Pset 6
+- Practice LTL and CTL (two specification languages)
+- Learn how to use a model checker
+- Fun with synthesis
